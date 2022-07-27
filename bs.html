@@ -10,8 +10,189 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+
+    <!-- My css -->
+    <link rel="stylesheet" href="custom.css" />
+
+    <!-- font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/c3e67e478e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- header section STARTS here -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+          <!-- SEARCH FORM STARTS here -->
+          <div class="w-50 d-none d-sm-block rounded-pill px-3 bg-white">
+            <form class="d-flex sm-invisible" role="search">
+              <input
+                class="form-control border-0 d-sm-none d-md-block"
+                type="go"
+                placeholder="go"
+                aria-label="go"
+              />
+              <button class="btn border-0 p-0" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <!-- SEARCH FORM ends here -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header section ends here -->
+    <!-- Banner section starts here -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide container my-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!-- first slide  -->
+      <div class="carousel-inner bg-pink rounded-3">
+        <div class="carousel-item active">
+          <div
+            class="d-flex p-5 flex-sm-column-reverse flex-xs-column-reverse flex-md-row"
+          >
+            <div class="d-flex flex-column justify-content-center pe-5">
+              <h2>Mi LED TV 4A PRO 32</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet.
+              </p>
+              <h4 class="pb-2">$1200</h4>
+              <button type="button" class="btn btn-pink text-white .btn-sm w-25 sm-w-50">
+                Buy Now
+              </button>
+            </div>
+            <div>
+              <img class="w-75" src="images/banner-images/headphone.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- sencond slide  -->
+        <div class="carousel-item">
+          <div
+            class="d-flex p-5 flex-sm-column-reverse flex-xs-column-reverse flex-md-row"
+          >
+            <div class="d-flex flex-column justify-content-center pe-5">
+              <h2>Mi LED TV 4A PRO 32</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet.
+              </p>
+              <h4 class="pb-2">$1200</h4>
+              <button type="button" class="btn btn-pink text-white .btn-sm w-25">
+                Buy Now
+              </button>
+            </div>
+            <div>
+              <img class="w-75" src="images/banner-images/xbox.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- third slide  -->
+        <div class="carousel-item">
+          <div
+            class="d-flex p-5 flex-sm-column-reverse flex-xs-column-reverse flex-md-row"
+          >
+            <div class="d-flex flex-column justify-content-center pe-5">
+              <h2>Mi LED TV 4A PRO 32</h2>
+              <p class="pe-5">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam
+                consequat sunt nostrud amet.
+              </p>
+              <h4 class="pb-2">$1200</h4>
+              <button type="button" class="btn btn-pink text-white .btn-sm w-25">
+                Buy Now
+              </button>
+            </div>
+            <div>
+              <img class="w-75" src="images/banner-images/tv.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleSlidesOnly"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Banner section Ends here -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
